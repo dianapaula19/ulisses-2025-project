@@ -1,0 +1,13 @@
+{
+  "start_datetime": "2024-12-01T00:00:00",
+  "end_datetime": "2025-01-31T23:59:59",
+  "minimum_longitude": 162.0,
+  "maximum_longitude": 220.0,
+  "minimum_latitude": -78.0,
+  "maximum_latitude": -70.0,
+  "variables": [
+    "eastward_sea_ice_velocity",
+    "northward_sea_ice_velocity"
+  ],
+  "output_filename": "ice_dec_2024_jan_2025.nc"
+}  
