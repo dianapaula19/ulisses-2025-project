@@ -105,7 +105,6 @@ export default function App() {
           className="w-full aspect-video max-w-5xl max-h-[90vh] border-2 border-green-500 rounded-xl mb-4"
           muted
           playsInline
-          controls
         />
         <label htmlFor="day-slider" className="mb-2 block">
           Day {day} of {totalDays}
