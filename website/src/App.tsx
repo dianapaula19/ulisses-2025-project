@@ -6,14 +6,14 @@ export default function App() {
     document.title = "OPERATION: N.U.R.D.L.E.S";
   }, []);
 
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [day, setDay] = useState(1);
   const totalDays = 62;
   const duration = 8; // seconds
   const secondsPerDay = duration / totalDays;
 
-  const handleSliderChange = (e) => {
-    const selectedDay = parseInt(e.target.value);
+  const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selectedDay = parseInt(e.target.value, 10);
     setDay(selectedDay);
     if (videoRef.current) {
       videoRef.current.currentTime = (selectedDay - 1) * secondsPerDay;
