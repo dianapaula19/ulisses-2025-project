@@ -92,7 +92,7 @@ export default function App() {
       <section className="h-screen snap-start flex flex-col justify-center px-10 max-w-4xl mx-auto">
         <h2 className="text-3xl mb-4">Our Response</h2>
         <p>
-          Our team, <strong>CYCLOPS</strong>, has deployed to <strong>McMurdo Station</strong>, the largest and most advanced research base in Antarctica. From this strategic base, we are preparing to investigate, monitor, and respond to the challenges ahead.
+          Our team, <strong>CYCLOPS</strong>, has deployed to <strong>Scott Base</strong>, the largest and most advanced research base in Antarctica. From this strategic base, we are preparing to investigate, monitor, and respond to the challenges ahead.
         </p>
       </section>
 
@@ -127,12 +127,18 @@ export default function App() {
           Spread awareness, support clean-up efforts, or partner with the research team.
         </p>
         <div className="flex justify-center gap-4">
-          <button className="bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 rounded-xl">
+          <a
+            href="mailto:ulisses.cyclop.25@gmail.com"
+            className="bg-green-600 hover:bg-green-500 text-black font-bold py-2 px-4 rounded-xl inline-block cursor-pointer"
+          >
             Contact Us
-          </button>
-          <button className="bg-red-600 hover:bg-red-500 text-black font-bold py-2 px-4 rounded-xl">
+          </a>
+          <a
+            href="https://www.antarcticfund.org/checkout/donate?donatePageId=5566ea04e4b0361ad47a976b"
+            className="bg-cyan-400 hover:bg-cyan-300 text-black font-bold py-2 px-4 rounded-xl inline-block cursor-pointer"
+          >
             Donate
-          </button>
+          </a>
         </div>
       </section>
     </div>
