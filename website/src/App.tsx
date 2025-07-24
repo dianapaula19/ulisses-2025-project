@@ -21,6 +21,15 @@ export default function App() {
   };
 
   return (
+    <div className="flex items-center justify-center h-screen bg-black text-white text-center">
+      <div>
+        <h1 className="text-4xl font-bold mb-4">🚧 OPERATION: N.U.R.D.L.E.S</h1>
+        <p className="text-xl">This mission is currently underway.<br />Check back tomorrow for full access.</p>
+      </div>
+    </div>
+  );
+
+  return (
     <div className="bg-black text-green-400 font-mono snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
       {/* Slide 1 – Title */}
       <section className="h-screen snap-start flex flex-col items-center justify-center text-center px-4">
