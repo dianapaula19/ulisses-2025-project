@@ -58,17 +58,17 @@ export default function App() {
         <h2 className="text-3xl mb-4">Spill Location</h2>
         <p className="max-w-2xl mb-6">
           The spill occurred at:<br />
-          📍 Latitude: -74.775843<br />
-          📍 Longitude: 188.789063<br />
+          📍 Latitude: -72.97<br />
+          📍 Longitude: 171.54<br />
           This site lies within the Antarctic Polar Front — a fragile, biodiverse marine zone.
         </p>
         <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=185.289063%2C-77.275843%2C192.289063%2C-72.275843&layer=mapnik&marker=-74.775843%2C188.789063"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=185.289063%2C-77.275843%2C192.289063%2C-72.275843&layer=mapnik&marker=-74.775843%2C171.54"
           className="w-full max-w-4xl h-[400px] border-2 border-green-500 rounded-xl"
           title="Spill Location Map"
         />
         <a
-          href="https://www.openstreetmap.org/?mlat=-74.775843&mlon=188.789063#map=4/-74.775843/188.789063"
+          href="https://www.openstreetmap.org/?mlat=-72.97&mlon=171.54#map=4/-72.97/171.54"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-2 underline text-green-300"
@@ -101,23 +101,35 @@ export default function App() {
         <h2 className="text-3xl mb-4">Nurdle Drift Simulation</h2>
         <video
           ref={videoRef}
-          src="/nurdle_simulation.mp4"
+          src="/nurdle_spill.mp4"
           className="w-full aspect-video max-w-5xl max-h-[90vh] border-2 border-green-500 rounded-xl mb-4"
           muted
           playsInline
         />
-        <label htmlFor="day-slider" className="mb-2 block">
-          Day {day} of {totalDays}
-        </label>
-        <input
-          id="day-slider"
-          type="range"
-          min="1"
-          max={totalDays}
-          value={day}
-          onChange={handleSliderChange}
-          className="w-full max-w-lg accent-green-400"
-        />
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <label htmlFor="day-input" className="text-sm">Day:</label>
+              <input
+                id="day-input"
+                type="number"
+                min="1"
+                max={totalDays}
+                value={day}
+                onChange={handleSliderChange}
+                className="w-20 p-1 rounded bg-gray-800 text-white border border-gray-600"
+              />
+              <span className="text-sm">of {totalDays}</span>
+            </div>
+            <input
+              id="day-slider"
+              type="range"
+              min="1"
+              max={totalDays}
+              value={day}
+              onChange={handleSliderChange}
+              className="w-full max-w-lg accent-green-400"
+            />
+        </div>
       </section>
 
       {/* Slide 7 – Join the Mission */}
