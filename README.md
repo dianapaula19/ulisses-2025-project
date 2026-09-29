@@ -3,7 +3,7 @@
 Where do plastic pellets ("nurdles") go after a spill at sea? This project simulates their drift
 with [OpenDrift](https://opendrift.github.io/) (`OceanDrift`), forced by Copernicus Marine ocean
 currents, winds and sea ice, and presents the result on a small mission-themed website.
-Made for the ULISSES 2025 project.
+Made for the ULISSES 2025 project as a student at Aalto University.
 
 Two scenarios, 50 000 particles each, hourly time step, 2 months:
 
